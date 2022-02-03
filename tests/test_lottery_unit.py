@@ -41,7 +41,7 @@ def test_cant_enter_unless_started():
         lottery.enter({"from": account, "value": fee})
 
 
-def can_start_and_enter_lottery():
+def test_can_start_and_enter_lottery():
     # arrange
     if network.show_active() not in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
         pytest.skip()
